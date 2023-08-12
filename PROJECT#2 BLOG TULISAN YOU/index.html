@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CERITA SERU </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            <h1>CERITA<span>SERU</span></h1>
+        </div>
+
+        <div class="nav-search">
+            <form action="/search" method="get">
+                <input type="text" id="search" name="query" placeholder="Cari judul/pengarang">
+                <i class="bi bi-search"></i>
+            </form>
+        </div>
+
+        <div class="nav-extra">
+            <a href=""><i class="bi bi-cart-plus-fill"></i></a>
+            <a href=""><i class="bi bi-person-square"></i></a>
+
+        </div>
+    </nav>
+
+    <div class="nav-tulisan">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Kategori</a></li>
+            <li><a href="">Member</a></li>
+            <li><a href="">Buku</a></li>
+            <li><a href="">Reward</a></li>
+            <li><a href="">Transaksi</a></li>
+            <li><a href="">Info</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+    </div>
+
+    <section>
+        <div class="slide">
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="./Img/slide1.webp" alt="Gambar 1">
+                    <img src="./Img/anime-art-battle-boys-wallpaper-preview.jpg" alt="Gambar 2">
+                    <img src="./Img/desktop-wallpaper-action-anime-cool-anime-fight.jpg" alt="Gambar 3">
+                </div>
+            </div>
+        </div>
+
+        <div class="kotak3">
+            <div>
+                <h1><a href="">CERITA HOROR</a></h1>
+            </div>
+            <div>
+                <h1><a href="">CERITA LUCU</a></h1>
+            </div>
+            <div>
+                <h1><a href="">CERITA ACTION</a></h1>
+            </div>
+            <div>
+                <h1><a href="">CERITA LUCU</a></h1>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </section>
+
+    <section class="mainhero">
+        <h1>BEST SELLER</h1>
+        <button class="button" type="button">Lihat Semua</button>
+    </section>
+
+    <div class="main">
+        <div class="cerita1">
+            <img src="./Img/DreamShaper_v5_With_his_passionate_eyes_ever_unkempt_dark_brow_2.jpg" alt="">
+            <h1>"Tirai Pikiran: Perjalanan dari <br>Keserakahan ke Kebaikan"</h1>
+        </div>
+
+        <div class="cerita2">
+            <img src="./Img/DreamShaper_v5_With_eyes_sparkling_with_an_adventurous_spirit_1.jpg" alt="">
+            <h1>"Pencarian Permata Pulau: <br> Petualangan Maya <br>Menuju Harta Karun dan Kebaikan"</h1>
+        </div>
+
+        <div class="cerita3">
+            <img src="./Img/DreamShaper_v5_With_short_blonde_hair_giving_him_a_practical_l_3.jpg" alt="">
+            <h1>"Inovasi Tanpa Batas: <br> Keempat Anak Muda <br>Melawan Raksasa Teknologi"</h1>
+        </div>
+
+        <div class="cerita4">
+            <img src="./Img/DreamShaper_v5_With_a_strong_looking_build_and_shiny_gray_unde_0.jpg" alt="">
+            <h1> "Bayangan Perubahan: <br> Antihero Melawan Penjahat <br>demi Kampung Halaman"</h1>
+        </div>
+    </div>
+
+
+    <footer>
+        <ul>
+            <li class="admin">CERITA<span>SERU</span></li>
+            <li>Instagram Kami</li>
+            <li>Twitter Kami</li>
+            <li>Youtube Kami</li>
+            <li>Tiktok Kami</li>
+        </ul>
+    </footer>
+
+
+
+
+    <script>
+        const slider = document.querySelector('.slider');
+        let count = 0;
+
+        setInterval(() => {
+            count = (count + 1) % slider.children.length;
+            slider.style.transform = `translateX(-${count * 100}%)`;
+        }, 2000); // Ganti gambar setiap 5 detik
+    </script>
+</body>
+
+</html>
